@@ -83,7 +83,7 @@ namespace Paint
             pictureBox1.Image = map; //новое поле
         }
 
-        private void trackBar1_ValueChanged(object sender, EventArgs e)
+        private void trackBar1_ValueChanged(object sender, EventArgs e) //изменение толщины
         {
             pen.Width = trackBar1.Value;
         }
