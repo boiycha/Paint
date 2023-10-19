@@ -87,6 +87,20 @@ namespace Paint
         {
             pen.Width = trackBar1.Value;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "JPG(*.JPG)|*.jpg";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+
+                if (pictureBox1.Image == null)
+                {
+                    pictureBox1.Image.Save(saveFileDialog1.FileName);
+                }
+            }
+        }
     }
 
     public class ArrayPoints
